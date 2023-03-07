@@ -103,6 +103,10 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                             Tables
                         </a>
+                        <a class="nav-link" href="/container">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Container
+                        </a>
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">

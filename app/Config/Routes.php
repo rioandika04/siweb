@@ -40,7 +40,7 @@ $routes->get('/Home', 'Home::DDPO');
 $routes->get('/Home/DDPO', 'Home::Pengalaman_Organisasi');
 
 $routes->get('/coba/(:any)', 'Home::about/$1');
-$routes->get('/coba/(:any)/(:num)', 'Home::about/$1$2');
+$routes->get('/coba/(:any)/(:num)', 'Home::about/$1/$2');
 $routes->addPlaceholder('uuid', '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}');
 $routes->get('coba2/(:uuid)', function ($uuid) {
     echo "UUID: $uuid";
@@ -52,6 +52,9 @@ $routes->group('adm', function ($r) {
     $r->get('users', 'Admin\Users::index');
     $r->get('master', 'Admin\Master::index');
 });
+
+$routes->get('/container', 'Home::container');
+
 
 // $routes->get('/DDPO', 'DDPO::index');
 

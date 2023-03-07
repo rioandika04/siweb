@@ -33,4 +33,8 @@ class Home extends BaseController
     {
         return view('Pengalaman_Organisasi.php');
     }
+
+    public function container(){
+        return view('container/index.php');
+    }
 }
